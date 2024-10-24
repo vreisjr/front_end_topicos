@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao HTML</title>
+
+    <link rel="stylesheet" href="./src/styles.css">
+
+</head>
+<body>
+    <h1 class="html">Introdução ao HTML</h1>
+    <a href="index.html">Voltar</a>
+    <ol>
+        <li>A anatomia das tags:</li>
+        <ul>
+            <li>O elemento principal do HTML é a Tag</li>
+            <li>Gearlmente, as tags tem abertura e fechamento</li>
+            <li>Exemplo: A tag p é de parágrafo</li>
+        </ul><br>
+        <li>A estrutura do HTML</li>
+        <ul>
+            <li>A estrutura base do HTML é composta por:</li>
+            <li>DOCTYPE - Tag que declara a versão do HTML</li>
+            <li>html - Tag que envolve todo o código HTML</li>
+            <li>head - A Tag que colocamos todas as configurações de um site, como, a importação do CSS</li>
+            <li>body - É onde todos os elementos visíveis estão</li>
+        </ul><br>
+        <li>Títulos</li>
+        <ul>
+            <li>São conecidos como "Headings"</li>
+            <li>Utilizado para separar seções</li>
+            <li>O nome da Tag é a h, onde o valor pode ser de 1 a 6</li>
+            <li>O maior e mais importante é o h1, clocamos um por página</li>
+            <li>A importância deve estar conectada com o propósito da página</li>
+            <li>Esse assunto faz parte do HTML Semântico, um tópico mais avançado</li>
+        </ul><br>
+        <li>Parágrafos</li>
+        <ul>
+            <li>Utilizamos Parágrafos para textos maiores</li>
+            <li>A Tag é a p</li>
+            <li>Cada Parágrafo começa uma nova linha, e este comportamento acontece com todas as Tags de bloco</li>
+            <li>Existem várias tags de bloco, os Títulos também fazem parte</li>
+        </ul><br>
+        <li>Tgas sem conteúdo</li>
+        <ul>
+            <li>Tags sem conteúdo possuem recursos geralmente como quebrar linha</li>
+            <li>para este fim, podemos utilizar a Tag br</li>
+            <li>Para uma linha horizontal, temos hr</li>
+            <li>Elas também introduzem o conceito de Self Closing Tags, onde a Tag não possui outra Tag e fechamento</li>
+        </ul><br>
+        <li>Comentários no HTML</li>
+        <ul>
+            <li>Comentários são utilizados para descrever como algo funciona no código</li>
+            <li>Ou explicar para outros programadores o que fizemos</li>
+            <li>Os comentários não são exibidos na página</li>
+            <li>Mas qualquer um que inspecionar o seu código, terá acesso aos comentários </li>
+            <li>Atalho: ctrl + ;</li>
+        </ul><br>
+        <li>Atributos</li>
+        <ul>
+            <li>Atributos podem ser utilizados para adicionar funcionalidades as Tags</li>
+            <li>A Tag a é responsável por direcionar a uma nova página ou site</li>
+            <li>Mas aonde vamos adicionar o endereço/URL?</li>
+            <li>Colocamos um atributo chamado href</li><br>
+            <li>Exemplo: a href="https://www.google.com"</li><br>
+            <a href="https://www.google.com">Site do Google</a>
+        </ul><br>
+        <li>Abrir Link em uma nova aba</li>
+        <ul>
+            <li>Com um atributo podemos fazer o link abrir em uma nova aba</li>
+            <li>Isso é utilizado frequentemente para redirecionar a outro site</li>
+            <li>Por exemplo: temos um link que leva a um e-commerce que não é o nosso, não temos quele domínio</li>
+            <li>Então utilizamos o atributo target com o valor_blank</li><br>
+            <li>Exemplo: a href="https://www.youtube.com/" target="_blank"</li><br>
+            <a href="https://www.youtube.com/" target="_blank">Abrir Youtube em uma nova aba</a>
+        </ul><br>
+        <li>Imagem no HTML</li>
+        <ul>
+            <li>Nós podemos inserir imagens no nosso site com a Tag img</li>
+            <li>O caminho relativo até a imagem é inserido no atributo src</li>
+            <li>Normalmente, colocamos as imagens em uma pasta chamada: img ou assets, para fins de organização</li>
+            <li>Nota: a img é uma Self Closing Tag</li><br>
+            <li>Exemplo: img src="./src/img/city.jpg"</li><br>
+            <img src="./src/img/city.jpg" alt="Imagem de uma cidade a noite">
+        </ul><br>
+        <li>Atributo alt</li>
+        <ul>
+            <li>Nas tags de img, temos um atributo chamado alt</li>
+            <li>Inserimos um texto nele para descrever a imagem</li>
+            <li>Este recurso é impostante para acessibilidade, fzendo com que nosso site seja melhor rankeado pelo Google também</li><br>
+            <li>Exemplo: img src="./src/img/city.jpg" alt="Imagem de uma cidade a noite"</li>
+        </ul><br>
+        <li>Listas não Ordenadas</li>
+        <ul>
+            <li>Listas são importantes para muitos sites</li>
+            <li>Podemos crira até um menu a partir de uma lista</li>
+            <li>As não ordenadas são criadas pela Tag ul</li>
+            <li>Cada item da lista é representado pela Tag li</li><br>
+            <li>Exmplo: </li><br>
+            <ul>
+                <li>Maçã</li>
+                <li>Pera</li>
+                <li>Uva</li>
+                <li>Banana</li>
+            </ul>
+        </ul><br>
+        <li>Listas Ordenadas</li>
+        <ul>
+            <li>São interessnates para quando há um procedimento, ou passos a serem seguidos</li>
+            <li>Utilizamos a Tag ol</li>
+            <li>E os itens continuam sendo a Tag li</li><br>
+            <li>Exemplo: Agenda de rotina</li><br>
+            <ol>
+                <li>Acordar</li>
+                <li>Tomar café</li>
+                <li>Ir trabalhar</li>
+                <li>Intervalo de almoço</li>
+                <li>Voltar ao trabalho</li>
+                <li>Ir pra casa</li>
+                <li>Jantar</li>
+                <li>Dormir</li>
+            </ol>
+        </ul><br>
+        <li>Tabelas</li>
+        <ul>
+            <li>Hoje é considerada obsoleta</li>
+            <li>Ussmos tabelas para exibir dados que podem ser categorizados em colunas</li>
+            <li>Tabelas são estruturas complexas no HTML, e não tão utilizadas</li>
+            <li>A Tag é a table, isso cria uma tabela</li>
+            <li>E também um cabeçalho e um corpo</li>
+            <li>Cada linha é criada com a Tag tr, e os dados em td</li>
+            <li>No cabeçalho utilizamos a Tag th</li><br>
+            <li>Exemplo:</li><br>
+            <table>
+                <tr>
+                    <th>ID:</th>
+                    <th>Nome:</th>
+                    <th>Profissão:</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Matheus</td>
+                    <td>Programador</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Alexia</td>
+                    <td>Engenheira civil</td>
+                </tr>
+            </table>
+        </ul><br>
+        <li>A Tag div</li>
+        <ul>
+            <li>A Tag div é utilizada para criar divisões/seções no nosso site</li>
+            <li>Podemos criar elementos menores também, como cards</li>
+            <li>O principal propósito é: encapsular elementos que estão conectados entre si</li><br>
+            <li>Exemplo:</li><br>
+            <div>
+                <h2>Título da seção</h2>
+                <p>Descrição da seção, um texto relacionado a este assunto</p>
+            </div>
+        </ul>
+    </ol>
+</body>
+</html>
