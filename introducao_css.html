@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,14 +9,63 @@
     <link rel="stylesheet" href="./src/styles.css">
 
 </head>
+
 <body>
     <h1 class="css">Introdução ao CSS</h1>
     <a href="index.html">Voltar</a>
     <ol>
+        <li>A anatomia do CSS</li>
+        <ul>
+            <li>Com CSS aplicamos CSS a um elemento</li>
+            <li>Primeiramente devemos selecionar o elemento, isso pode ser feito através da Tag do elemento</li>
+            <li>Depois precisamos colocar as propriedades e os valores</li>
+            <li>Se quisermos mudar a cor de algo, utilizamos: color:red</li><br>
+            <li>Nome da propriedade, dois pontos, valor, ponto e vírgula</li>
+        </ul><br>
         <li>Maneiras de adicionar CSS</li>
+        <ul>
+            <li>Temos algumas maneiras de adicionar CSS ao HTML</li><br>
+            <ol>
+                <li>Inline: Quando os estilos são adicionados por um atributo</li>
+                <li>Internal: Quando o CSS é adicionado na Tag head</li>
+                <li>External: Quando o CSS é adicionado através de um arquivo externo, e depois importado no HTML</li>
+            </ol>
+            <br>
+            <li>Vamos sempre optar pelo External CSS, quando houver a opção</li>
+            <li>Isso vai organizar melhor o projeto</li>
+        </ul><br>
+        <li>Inline</li>
+        <ul>
+            <li>O CSS inline pode ser adicionado sem sem selecionar o elemento, porquê é um atributo diretamente inserido no mesmo;</li>
+            <li>O elemneto já está selecionado!</li>
+            <li>O atributo style nos permite escrever regras de CSS</li><br>
+            <li>Exemplo:</li><br>
+            <ul>
+                <li>style="color: red"</li>
+            </ul>
+        </ul><br>
+        <li>Múltiplas regras de CSS</li>
+        <ul>
+            <li>Nós podemos adicionar várias regras de CSS</li>
+            <li>Elas podem ser separadas por ponto e vírgula</li>
+            <li>Então é possivel fazer uma união de estilos, dar um design melhor ao elemento</li>
+        </ul><br>
+        <li>Internal CSS</li>
+        <ul>
+            <li>O Internal é uma técnica melhor que o Inline, vamos colocar todos os estilos na tag head</li>
+            <li>As regras precisam também estar entre a tag style;</li>
+            <li>E através desta maneira, é necessário selecionar o elemento alvo:</li><br>
+            <li>Exemplo:</li><br>
+            <li> p{</li>
+            <li> color: red;</li>
+            <li>}</li>
+        </ul><br>
+        <li>External CSS</li>
         <ul>
             <li></li>
         </ul>
     </ol>
+
 </body>
+
 </html>
