@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Introdução ao CSS</title>
 
-    <link rel="stylesheet" href="./src/styles.css">
+    <link rel="stylesheet" href="./src/css/styles.css">
 
 </head>
 
@@ -61,6 +61,47 @@
             <li>}</li>
         </ul><br>
         <li>External CSS</li>
+        <ul>
+            <li>Para adicionar CSS com esta técnica precisamos criar um arquivo .css;</li>
+            <li>Geralmente eles ficam numa pasta chamada css;</li>
+            <li>E nós o importamos através da Tag head;</li>
+            <li>As regras que estão no arquivo são aplicadas no HTML;</li><br>
+            <li>Exemplo:</li><br>
+            <li>head</li>
+            <li>link rel="stylesheet" href="./src/css/styles.css"</li>
+            <li>/head</li><br>
+        </ul><br>
+        <li>Ordem do CSS</li>
+        <ul>
+            <li>O CSS é carregado a partir de uma ordem;</li>
+            <li>Se temos estilos misturados (inline, internal e external), qual será aplicado?</li><br>
+            <li>Todos eles, mas com a seguinte ordem: inline > internal = external > padrão do navegador;</li><br>
+            <li>Esta regra funciona quando temos estilos em um mesmo elemento;</li>
+            <li>Interno e externo tem a mesma prioridade, a última regra ganha a 'corrida';</li>
+        </ul><br>
+        <li>Múltiplos arquivos de CSS</li>
+        <ul>
+            <li>É possível ter mais de uma folha de estilo no nosso projeto;</li>
+            <li>Precisamos apenas importar todas elas na Tag head;</li>
+            <li>Os arquivos importados por último tem mais prioridade;</li>
+            <li>Esta é uma boa prática, pois possibilita a divissão de CSS por páginas;</li>
+        </ul><br>
+        <li>Comentários no CSS</li>
+        <ul>
+            <li>Comentários do CSS são como os de HTML, utilizamos para descrever algo no código;</li>
+            <li>Caso o código seja inspecionado, os comentários também são exibidos;</li><br>
+            <li>A sintaxe é : /* algum comentário */;</li><br>
+            <li>Atalho: ctrl + ;</li><br>
+            <li>(Assim como o comentário de HTML)</li>
+        </ul><br>
+        <li class="html">Classes e ids (HTML)</li>
+        <ul>
+            <li>Classes e ids são atributos do HTML, mas estão diretamente relacionados ao CSS;</li>
+            <li>Podemos especificcar elementos específicos com eles;</li><br>
+            <li>Ids são utilizados para elementos únicos;</li><br>
+            <li>E classes servem para um ou mais elementos, geralmente utilizadas em conjuntos de elementos</li>
+        </ul><br>
+        <li>Classes</li>
         <ul>
             <li></li>
         </ul>
