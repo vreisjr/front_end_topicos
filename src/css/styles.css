@@ -33,3 +33,23 @@ h1 {
     color: gold;
     padding: 10px;
 }
+ .cor1 {
+    background-color: blue;
+    color: black;
+ }
+
+ .cor2 {
+    background-color: green;
+    color: black;
+ }
+
+ .cor3 {
+    background-color: red;
+    color: black;
+ }
+
+.cor5 {
+    background-color: #fff;
+    color: black;
+}
+ 
